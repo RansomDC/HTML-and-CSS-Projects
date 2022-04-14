@@ -157,6 +157,7 @@ section {
     font-weight: 900;
     border: 5px double #fff;
     padding: 10px;
+    -webkit-text-stroke: .1px #fff;
 }
 
 .head-sub-main {
@@ -232,6 +233,7 @@ section {
     color:#13161b;
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .reservation form {
@@ -329,5 +331,5 @@ section {
     color: #000;
     text-shadow: 2px 2px 8px 0 (0, 0, 0, 0.4);
     padding: 20px 50px 20px 50px;
-    text-align: right;
+    text-align: center;
 }
