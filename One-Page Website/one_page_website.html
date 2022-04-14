@@ -8,69 +8,84 @@
 
     <body>
 		<!-- NAVBAR -->
-		<div>
+		<div class="navbar">
 			<nav>
-				<a href="#home" id="link"><span>HOME</span></a>
-				<span> | </span>
-				<a href="#gallery" id="link"><span>IMAGES</span></a>
-				<span> | </span>
-				<a href="#signup" id="link"><span>SIGNUP</span></a>
+				<a href="#home" id="link"><div>HOME</div></a>
+				<a href="#gallery" id="link"><div>IMAGES</div></a>
+				<a href="#signup" id="link"><div>SIGNUP</div></a>
 			</nav>
 		</div>
 		<!-- END NAVBAR -->
-      
-		<!-- HOME -->
-		<div id="home">
-			<h1>Welcome to The Uke Outlet!</h1>
-			<p>The best place on the internet for your ukulele needs</p>
-		</div>
-		<!-- END HOME -->
-	  
-		<!-- VIDEO -->
-		<div>
-			<p>Why learn Ukulele? Here's 3 hours and 36 minutes of reasons why!</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/yyDjIW1qklo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<!-- VIDEO -->
-	  
-		<!-- IMAGES -->
-		<div id="gallery">
-			<div>
-				<img alt="ukulele variety 1" src="./img/uke_1.jpeg">
-				<p>A handsome hand-made ukulele.</p>
-			</div>
-			<div>
-				<img alt="ukulele variety 2" src="./img/uke_2.jpg">
-				<p>A ukulele crafted entirely from clay.</p>
-			</div>
-			<div>
-				<img alt="ukulele variety 3" src="./img/uke_3.jpeg">
-				<p>One of our most beautiful concrete countertops.</p>
-			</div>
-			<div>
-				<img alt="ukulele variety 4" src="./img/uke_4.jpeg">
-				<p>The largest ukulele ever made!</p>
-			</div>
-		</div>
-		<!-- IMAGES -->
 		
-		<!-- SIGN UP -->
-		<div id="signup">
-			<p>Interested in getting updates from The Uke Outlet? <br>Sign up now!</p>
-			<form>
-				<input class="mail-list" type="text" value="Full Name"></input>
-				<input class="mail-list" type="text" value="Email Address"></input>
-				<input type="submit" value="submit"></input>
-			</form>
-		</div>
 		
-		<!-- END SIGN UP -->
+			<!-- HOME -->
+			<div id="home">
+				<div>
+					<div class="headline">
+						<h1>Welcome to The Uke Outlet!</h1>
+					</div>
+					<p class="sub-header">The best place on the internet for your ukulele needs.</p>
+				</div>
+			</div>
+			<!-- END HOME -->
+
+		<div class="separator">
+			<!-- VIDEO -->
+			<div id="video">
+				<div class="flex-container">
+					<p class="sub-header">Why learn Ukulele? Here's 3 hours and 36 minutes of reasons why!</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/yyDjIW1qklo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- VIDEO -->
 		
-		<!-- FOOTER -->
-		<footer>
-			<p>www.The-uke-outlet.com</p>
-		</footer>
-		<!-- END FOOTER -->
-	  
+			<!-- IMAGES -->
+			<div id="gallery">
+				<div class="flex-container">
+					<h1>PHOTOS</h1>
+					<div class="container">
+						<img alt="ukulele variety 1" src="./img/uke_1.jpeg">
+						<p>A handsome hand-made ukulele.</p>
+					</div>
+					<div class="container">
+						<img alt="ukulele variety 2" src="./img/uke_2.jpg">
+						<p>A ukulele crafted entirely from clay.</p>
+					</div>
+					<div class="container">
+						<img alt="ukulele variety 3" src="./img/uke_3.jpeg">
+						<p>One of our most beautiful 
+							<br/>concrete countertops.</p>
+					</div>
+					<div class="container">
+						<img alt="ukulele variety 4" src="./img/uke_4.jpeg">
+						<p>The largest ukulele ever made!</p>
+					</div>
+				</div>
+			</div>
+			<!-- IMAGES -->
+
+			<!-- SIGN UP -->
+			<div id="signup">
+				<div class="flex-container">
+					<p>Interested in getting updates from The Uke Outlet? 
+						<br/>
+						<br/>Sign up now!</p>
+
+					<form>
+						<input class="mail-list" type="text" value="" placeholder="Full Name"></input>
+						<input class="mail-list" type="text" value="" placeholder="Email Address"></input>
+						<input type="submit" value="submit"></input>
+					</form>
+				</div>
+			</div>
+
+			<!-- END SIGN UP -->
+
+			<!-- FOOTER -->
+			<footer>
+				<p>www.the-uke-outlet.com</p>
+			</footer>
+			<!-- END FOOTER -->
+			</div>
     </body>
 </html>
