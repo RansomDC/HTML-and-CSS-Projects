@@ -51,7 +51,7 @@ div p {
 
 /* The Modal (background) */
 .modal {
-	/*display: none;*/
+	display: none;
 	position: fixed;
 	z-index: 1;
 	padding-top: 100px;
@@ -94,7 +94,7 @@ div p {
 .mySlides {
 	display: none;
 	display: flex;
-	align-items: center;
+	justify-content: center;
 }
 
 /* Next & previous buttons */
@@ -131,6 +131,7 @@ div p {
 /* Number text (1/3 etc) */
 .numbertext {
 	color: #f2f2f2;
+	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
@@ -167,6 +168,12 @@ div p {
 .row-container {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.demo-container {
+	display: flex;
+	justify-content: center;
+	background-color: black;
 }
 /*/RC*/
 
