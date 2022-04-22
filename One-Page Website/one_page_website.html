@@ -4,6 +4,7 @@
         <title>Uke Outlet</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="one_page_website.css"/>
+		<script src="./JS/one_page_website.js" defer></script>
     </head>
 
     <body>
@@ -18,27 +19,110 @@
 		<!-- END NAVBAR -->
 		
 		
-			<!-- HOME -->
-			<div id="home">
-				<div>
-					<div class="headline">
-						<h1>Welcome to The Uke Outlet!</h1>
-					</div>
-					<p class="sub-header">The best place on the internet for your ukulele needs.</p>
+
+
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div class="headline">
+					<h1>Welcome to The Uke Outlet!</h1>
 				</div>
-			</div>
-			<!-- END HOME -->
+				<p class="sub-header">The best place on the internet for your ukulele needs.</p>
+				<p class="sub-header">Just look at these happy ukulele users!</p>			
+				</div>
+		</div>
+		<!-- END HOME -->
+
+
+
+
+			
 
 		<div class="separator">
-			<!-- VIDEO -->
+			<!-- VIDEO --
 			<div id="video">
 				<div class="flex-container">
 					<p class="sub-header">Why learn Ukulele? Here's 3 hours and 36 minutes of reasons why!</p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/yyDjIW1qklo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
-			<!-- VIDEO -->
-		
+			!-- VIDEO -->
+
+			<!--LIGHTBOX-->
+			<!-- Images used to open the lightbox -->
+			<div class="row-container">
+				<div class="row">
+					<div class="column">
+					  	<img src="img/boy-happy.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  	<img src="img/girl-happy.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  	<img src="img/man-happy.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  	<img src="img/woman-happy.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+				</div>
+			</div>
+
+			
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+				
+				  <div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="img/boy-happy.jpg" style="width:80%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="img/girl-happy.jpg" style="width:80%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="img/man-happy.jpg" style="width:80%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="img/woman-happy.jpg" style="width:80%">
+				  </div>
+			  
+				  <!-- Next/previous controls -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  
+				  <!-- Caption text -->
+				  <div class="caption-container">
+					<p id="caption">Hello!</p>
+				  </div>
+			  
+				  <!-- Thumbnail image controls -->
+				  <div class="column">
+					<img class="demo" src="img/boy-happy.jpg" onclick="currentSlide(1)" alt="Ululele makes people happy!">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="img/girl-happy.jpg" onclick="currentSlide(2)" alt="See? Another satisfied customer!">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="img/man-happy.jpg" onclick="currentSlide(3)" alt="The Uke has brought him joy and prosperity!">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="img/woman-happy.jpg" onclick="currentSlide(4)" alt="She is getting married because of the power of the Uke!">
+				  </div>
+				</div>
+  			</div>
+			<!--END LIGHTBOX-->
+
+
 			<!-- IMAGES -->
 			<div id="gallery">
 				<div class="flex-container">
