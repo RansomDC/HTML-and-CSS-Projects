@@ -6,9 +6,10 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/shared.css">
 		<link rel="stylesheet" type="text/css" href="./css/animations.css">
+		<script src="./JS/scripts.js" defer></script>
 	</head>
 	<!-- NAV -->
-	<body>
+	<body onload="document.body.style.opacity='1'"> <!--This sets the opacity of the body to change to 1 as soon as the page is loaded-->
 		<div class="wrap">
 			<div class="menu-container">
 				<ul class="menu">
@@ -148,7 +149,7 @@
 			</div>
 		</section>
 		<!-- END GALLERY -->
-		
+
 		<!-- RSVP -->
 		<section id="contact">
 			<div class="container">
@@ -162,11 +163,11 @@
 							Please provide us with your basic contact information.
 						</p>
 						<div class="form-rsvp">
-							<form action="" method="post">
-								<input class="rsvp" type="text" value="" placeholder="First Name">
-								<input class="rsvp" type="text" value="" placeholder="Last Name">
-								<input class="rsvp" type="text" value="" placeholder="Email Address">
-								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+							<form onsubmit="validateForm()" name="rsvp-form" action="" method="post">
+								<input class="rsvp" type="text" value="" name="fname" placeholder="First Name">
+								<input class="rsvp" type="text" value="" name="lname" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" name="email" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" name="phone-number" placeholder="Phone Number">
 								<div class="form-spacer">
 									<label class = "terms">Terms and conditions</label>
 								</div>

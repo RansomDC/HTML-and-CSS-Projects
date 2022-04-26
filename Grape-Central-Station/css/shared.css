@@ -19,6 +19,8 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+    opacity: 0; /*Set the page to be transparent*/
+    transition: opacity 3s; /* causes the page to transition to 100% opaque on load (the setting to change when loading is in the body element of the HTML */
 }
 
 footer, 
@@ -150,7 +152,7 @@ section {
     color: rgb(86, 150, 141);
     letter-spacing: 5pt;
     word-spacing: 21pt;
-    font-size: 4.5em;
+    font-size: 5vw;
     text-align: left;
     font-family: impact, sans-serif;
     line-height: 2;
